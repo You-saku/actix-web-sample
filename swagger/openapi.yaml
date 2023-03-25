@@ -1,0 +1,15 @@
+openapi: 3.0.0
+info:
+  title: actix-web-sample.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+    description: base endpoint.
+paths:
+  /:
+    get:
+      summary: Return "Hello world!".
+      description: tutorial
+      responses:
+        '200':    # status code
+          description: sample
