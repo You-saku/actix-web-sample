@@ -12,4 +12,3 @@ Try crud web server used actix-web.
 
 ## Appendix
  * [actix-web](https://actix.rs/)
- * [diesel](https://diesel.rs/)
