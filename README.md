@@ -1,7 +1,8 @@
 # actix-web-sample
 
 ## Summary
-This repository is sample project(created by actix-web).
+This repository is sample project(created by actix-web). <br>
+Try crud web server used actix-web.
 
 ## Requirements
  * rustc 1.67.1
