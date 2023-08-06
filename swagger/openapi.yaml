@@ -13,3 +13,56 @@ paths:
       responses:
         '200':    # status code
           description: sample
+  /users:
+    post:
+      tags:
+        - "users"
+      responses:
+        '201':
+          description: create user
+    get:
+      tags:
+        - "users"
+      responses:
+        '200':
+          description: find users
+  /users/{id}:
+    get:
+      tags:
+        - "users"
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            minItems: 1
+      responses:
+        '200':
+          description: find user
+    put:
+      tags:
+        - "users"
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            minItems: 1
+      responses:
+        '200':
+          description: update user
+    delete:
+      tags:
+        - "users"
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            minItems: 1
+      responses:
+        '204':
+          description: delete user
