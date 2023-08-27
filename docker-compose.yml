@@ -12,6 +12,6 @@ services:
     volumes:
       - actix-web-postgres:/var/lib/postgresql/data
       # 初回起動時にsqlを実行
-      - ./docker/db:/docker-entrypoint-initdb.d
+      # - ./docker/db:/docker-entrypoint-initdb.d
 volumes:
   actix-web-postgres:
